@@ -24,3 +24,60 @@ body {
     font-weight: bold;
     color: #ff0;
 }
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+}
+#ui {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    background: rgba(0,0,0,0.75);
+    padding: 15px 25px;
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    color: white;
+    border: 1px solid #88aaff;
+    pointer-events: none;
+}
+#score-panel {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+#score-panel button {
+    margin-top: 10px;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-family: monospace;
+    background: #2a2a4a;
+    color: white;
+    border: 1px solid #88aaff;
+    border-radius: 6px;
+    cursor: pointer;
+    pointer-events: auto;
+}
+#next-panel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(0,0,0,0.75);
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #88aaff;
+    pointer-events: none;
+}
+#controls {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0,0,0,0.6);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
