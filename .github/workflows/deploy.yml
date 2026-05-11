@@ -28,7 +28,11 @@ jobs:
       - name: Install wasm-pack
         run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
       - name: Build WASM
-        run: cd wasm && wasm-pack build --target web && mv pkg ../public/wasm
+        run: |
+          cd wasm
+          wasm-pack build --target web
+          mkdir -p ../public/wasm
+          mv pkg/* ../public/wasm/
       - name: Install dependencies
         run: npm install
       - name: Build Astro
