@@ -30,7 +30,7 @@ jobs:
       - name: Build WASM
         run: cd wasm && wasm-pack build --target web && mv pkg ../public/wasm
       - name: Install dependencies
-        run: npm ci
+        run: npm install
       - name: Build Astro
         run: npm run build
       - name: Upload artifact
