@@ -1,6 +1,6 @@
 name: Deploy to GitHub Pages
 
-on:
+on:               # <-- 'on' block is now clearly separate
   push:
     branches: [ main ]
   workflow_dispatch:
