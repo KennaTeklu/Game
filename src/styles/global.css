@@ -1,1 +1,26 @@
-
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+}
+#info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    z-index: 100;
+    pointer-events: none;
+}
+#info button {
+    pointer-events: auto;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+#score {
+    font-weight: bold;
+    color: #ff0;
+}
